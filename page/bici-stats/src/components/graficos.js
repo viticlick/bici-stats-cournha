@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, ButtonToolbar, ControlLabel, FormGroup, ToggleButtonGroup, ToggleButton} from 'react-bootstrap';
+import { Form, ButtonToolbar, FormGroup, ToggleButtonGroup, ToggleButton} from 'react-bootstrap';
 import PluviometriaUso from './grafico-pluviometria-uso';
 
 export default class Graficos extends Component {
@@ -11,7 +11,7 @@ export default class Graficos extends Component {
                 <Form>
                 <FormGroup>
                     <ButtonToolbar>
-                        <ToggleButtonGroup type="radio" name="options" defaultValue={[1]}>
+                        <ToggleButtonGroup type="radio" name="tiempo" defaultValue={[1]}>
                         <ToggleButton value={1} className={"btn-primary"}>Mensual</ToggleButton>
                         <ToggleButton value={2} className={"btn-primary"}>Diario</ToggleButton>
                         </ToggleButtonGroup>
@@ -19,7 +19,7 @@ export default class Graficos extends Component {
                 </FormGroup>
                 <FormGroup>
                     <ButtonToolbar>
-                        <ToggleButtonGroup type="checkbox" defaultValue={[1]}>
+                        <ToggleButtonGroup type="checkbox" name="valor" defaultValue={[1]}>
                             <ToggleButton value={1} className={"btn-primary"}>Horas de uso bicicleta</ToggleButton>
                             <ToggleButton value={2} className={"btn-primary"}>Litros de lluvia por metro cuadrado</ToggleButton>
                     </ToggleButtonGroup>
@@ -27,7 +27,7 @@ export default class Graficos extends Component {
                 <FormGroup>
                 </FormGroup>
                     <ButtonToolbar>
-                        <ToggleButtonGroup type="checkbox" defaultValue={[1]}>
+                        <ToggleButtonGroup type="checkbox" name="sexo" defaultValue={[1]}>
                             <ToggleButton value={1} className={"btn-primary"}>Ambos</ToggleButton>
                             <ToggleButton value={2} className={"btn-primary"}>Hombre</ToggleButton>
                             <ToggleButton value={3} className={"btn-primary"}>Mujer</ToggleButton>
