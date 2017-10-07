@@ -12,9 +12,6 @@ export default class PluviometriaUso extends Component {
         
         const data = mapData(DatosLluvia);
 
-          console.log(data);
-        const data2 = data.slice(2,5);
-        console.log(data2);
 // ["linear","ordinal","category","literal","log","time","time-utc"]
           return (
               <XYPlot height={300} width={800} xType="ordinal">
