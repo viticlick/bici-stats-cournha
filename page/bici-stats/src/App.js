@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Graficos from './components/graficos';
 import './App.css';
 
 class App extends Component {
@@ -16,40 +17,31 @@ class App extends Component {
               <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
               </li>
-
             </ul>
           </nav>
           <h3 class="text-muted">Bici Stats Coruña</h3>
         </div>
   
         <div class="jumbotron">
-          <h1 class="display-3">Jumbotron heading</h1>
-          <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <h1 class="display-3">Estudio del uso de BiciCoruña</h1>
+          <p class="lead">En este estudio mostramos la influencia del clima en los hábitos de movilidad de la población Coruñesa</p>
         </div>
   
         <div class="row marketing">
           <div class="col-lg-6">
-            <h4>Subheading</h4>
-            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-  
-            <h4>Subheading</h4>
-            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-  
-            <h4>Subheading</h4>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            <h4>Fuentes de datos</h4>
+            <p>Para el estudio, hemos tomado los datos de Coruña Smart City y Meteogalicia.</p>
           </div>
-  
+
           <div class="col-lg-6">
-            <h4>Subheading</h4>
-            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-  
-            <h4>Subheading</h4>
-            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-  
-            <h4>Subheading</h4>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            <h4>Estudio estadístico exhaustivo</h4>
+            <p>Se han utilizado las mas avanzadas herramientas y procedimientos para la obtención de los datos.</p>
+          </div>
+          <div class="col-lg-12">
+            <Graficos />
           </div>
         </div>
+
         <footer class="footer">
         <p>&copy; Hackatiño 2017</p>
       </footer>
